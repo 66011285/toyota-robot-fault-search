@@ -24,13 +24,38 @@ async function searchFault() {
 
         if (!fault) {
 
-            result.innerHTML = `
-                <h2 style="color:red;">❌ Error Code Not Found</h2>
-                <p>Please check the code and try again.</p>
-            `;
+    result.style.display = "block";
 
-            return;
-        }
+    result.innerHTML = `
+        <div class="error-box">
+
+            <h2>❌ Invalid Error Code</h2>
+
+            <p>
+                <strong>${code}</strong> was not found in the fault database.
+            </p>
+
+            <p>
+                Please verify the error code shown on the Teach Pendant and try again.
+            </p>
+
+            <hr>
+
+            <h2>❌ รหัสข้อผิดพลาดไม่ถูกต้อง</h2>
+
+            <p>
+                ไม่พบรหัส <strong>${code}</strong> ในฐานข้อมูลข้อผิดพลาด
+            </p>
+
+            <p>
+                กรุณาตรวจสอบรหัสข้อผิดพลาดที่แสดงบน Teach Pendant แล้วลองค้นหาอีกครั้ง
+            </p>
+
+        </div>
+    `;
+
+    return;
+}
 
         result.innerHTML = `
             <h2 style="color:#d6001c;">🔍 Error Code : ${fault.code}</h2>
@@ -93,6 +118,12 @@ async function searchFault() {
         console.error(error);
     }
 }
+
+document.getElementById("searchBox").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchFault();
+    }
+});
 
 document.getElementById("searchBox").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
