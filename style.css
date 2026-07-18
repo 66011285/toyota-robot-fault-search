@@ -1,4 +1,6 @@
-/* ---------- General ---------- */
+/* ========================================= */
+/* GENERAL */
+/* ========================================= */
 
 *{
     box-sizing:border-box;
@@ -12,7 +14,9 @@ body{
     color:#333;
 }
 
-/* ---------- Main Container ---------- */
+/* ========================================= */
+/* CONTAINER */
+/* ========================================= */
 
 .container{
     background:#fff;
@@ -23,7 +27,9 @@ body{
     box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-/* ---------- Header ---------- */
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
 
 .header{
     display:flex;
@@ -45,6 +51,7 @@ body{
     color:#d6001c;
     margin:0;
     font-size:38px;
+    line-height:1.2;
 }
 
 .subtitle{
@@ -53,7 +60,9 @@ body{
     font-size:18px;
 }
 
-/* ---------- Intro ---------- */
+/* ========================================= */
+/* TEXT */
+/* ========================================= */
 
 p{
     text-align:center;
@@ -61,7 +70,9 @@ p{
     line-height:1.6;
 }
 
-/* ---------- Search Area ---------- */
+/* ========================================= */
+/* SEARCH */
+/* ========================================= */
 
 .search-container{
     display:flex;
@@ -102,7 +113,9 @@ button:hover{
     transform:translateY(-2px);
 }
 
-/* ---------- Result ---------- */
+/* ========================================= */
+/* RESULT */
+/* ========================================= */
 
 #result{
     display:none;
@@ -131,84 +144,12 @@ button:hover{
 
 #result li{
     margin-bottom:8px;
-    line-height:1.5;
+    line-height:1.6;
 }
 
-/* ---------- Divider ---------- */
-
-hr{
-    border:none;
-    height:1px;
-    background:#ddd;
-    margin:25px 0;
-}
-
-/* ---------- Animation ---------- */
-
-@keyframes fadeIn{
-
-    from{
-        opacity:0;
-        transform:translateY(10px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
-
-/* ---------- Mobile ---------- */
-
-@media (max-width:768px){
-
-    body{
-        padding:15px;
-    }
-
-    .container{
-        padding:20px;
-    }
-
-    .header{
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
-    }
-
-    .logo{
-        width:130px;
-    }
-
-    .header h1{
-        font-size:28px;
-    }
-
-    .subtitle{
-        font-size:16px;
-    }
-
-    .search-container{
-        flex-direction:column;
-    }
-
-    input{
-        width:100%;
-        margin:0;
-        font-size:17px;
-    }
-
-    button{
-        width:100%;
-    }
-
-    #result{
-        padding:18px;
-        font-size:15px;
-    }
-
-}
+/* ========================================= */
+/* ERROR BOX */
+/* ========================================= */
 
 .error-box{
     background:#fff3f3;
@@ -231,6 +172,121 @@ hr{
     margin:8px 0;
 }
 
-.error-box hr{
-    margin:20px 0;
+/* ========================================= */
+/* DIVIDER */
+/* ========================================= */
+
+hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:25px 0;
+}
+
+/* ========================================= */
+/* ANIMATION */
+/* ========================================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:12px;
+    }
+
+    .container{
+        width:100%;
+        padding:22px;
+        border-radius:12px;
+    }
+
+    /* Stack logo above title */
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        gap:15px;
+    }
+
+    /* IMPORTANT: Remove desktop positioning */
+
+    .header div{
+        flex:none;
+        width:100%;
+        transform:none;
+        margin:0;
+        text-align:center;
+    }
+
+    .logo{
+        width:130px;
+        margin:0;
+    }
+
+    .header h1{
+        font-size:30px;
+        line-height:1.25;
+    }
+
+    .subtitle{
+        font-size:17px;
+        margin-top:8px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    /* Search */
+
+    .search-container{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    input{
+        width:100%;
+        font-size:17px;
+        margin:0;
+    }
+
+    button{
+        width:100%;
+        font-size:18px;
+    }
+
+    /* Result */
+
+    #result{
+        padding:18px;
+        font-size:15px;
+    }
+
+    #result h2{
+        font-size:28px;
+    }
+
+    #result h3{
+        font-size:22px;
+    }
+
 }
