@@ -1,0 +1,199 @@
+[
+  {
+    "code": "D1032",
+    "title": "Servo Board XX - Download error of servo software (code XX)",
+    "titleThai": "บอร์ดเซอร์โว XX - ข้อผิดพลาดในการดาวน์โหลดซอฟต์แวร์เซอร์โว (รหัส XX)",
+    "description": "The servo software download to the servo board failed.",
+    "descriptionThai": "การดาวน์โหลดซอฟต์แวร์ไปยังบอร์ดเซอร์โวล้มเหลว",
+    "causes": [
+      "Download interrupted",
+      "Communication error",
+      "Wrong software version",
+      "Servo board failure"
+    ],
+    "causesThai": [
+      "การดาวน์โหลดถูกขัดจังหวะ",
+      "เกิดข้อผิดพลาดในการสื่อสาร",
+      "ใช้ซอฟต์แวร์ผิดเวอร์ชัน",
+      "บอร์ดเซอร์โวชำรุด"
+    ],
+    "inspection": [
+      "Check controller power",
+      "Inspect communication cable",
+      "Verify software version",
+      "Download software again",
+      "Replace servo board if necessary"
+    ],
+    "inspectionThai": [
+      "ตรวจสอบแหล่งจ่ายไฟของคอนโทรลเลอร์",
+      "ตรวจสอบสายสื่อสาร",
+      "ตรวจสอบเวอร์ชันของซอฟต์แวร์",
+      "ดาวน์โหลดซอฟต์แวร์ใหม่",
+      "เปลี่ยนบอร์ดเซอร์โวหากยังพบปัญหา"
+    ],
+    "safety": [
+      "Power OFF robot before servicing",
+      "Follow Lockout/Tagout procedure"
+    ],
+    "safetyThai": [
+      "ปิดแหล่งจ่ายไฟของหุ่นยนต์ก่อนดำเนินการซ่อมบำรุง",
+      "ปฏิบัติตามขั้นตอน Lockout/Tagout"
+    ]
+  },
+  {
+    "code": "D1507",
+    "title": "AC Primary Power OFF",
+    "titleThai": "ไฟฟ้าหลัก AC ถูกปิด",
+    "description": "The controller has detected that the AC primary power supply is OFF.",
+    "descriptionThai": "คอนโทรลเลอร์ตรวจพบว่าแหล่งจ่ายไฟ AC หลักถูกปิดหรือไม่มีไฟเข้า",
+    "causes": [
+      "Main AC power supply is OFF",
+      "Circuit breaker has tripped",
+      "Power cable disconnected",
+      "Power supply failure"
+    ],
+    "causesThai": [
+      "ไฟ AC หลักถูกปิด",
+      "เบรกเกอร์ตัดวงจร",
+      "สายไฟหลักหลุดหรือเสียหาย",
+      "แหล่งจ่ายไฟขัดข้อง"
+    ],
+    "inspection": [
+      "Verify the main AC power supply.",
+      "Check the circuit breaker.",
+      "Inspect the power cable.",
+      "Restore power and restart the controller."
+    ],
+    "inspectionThai": [
+      "ตรวจสอบแหล่งจ่ายไฟ AC หลัก",
+      "ตรวจสอบเบรกเกอร์",
+      "ตรวจสอบสายไฟหลัก",
+      "เปิดไฟและรีสตาร์ทคอนโทรลเลอร์"
+    ],
+    "safety": [
+      "Disconnect power before servicing electrical components.",
+      "Follow Lockout/Tagout procedures."
+    ],
+    "safetyThai": [
+      "ตัดไฟก่อนซ่อมบำรุงอุปกรณ์ไฟฟ้า",
+      "ปฏิบัติตามขั้นตอน Lockout/Tagout"
+    ]
+  },
+  {
+    "code": "E9462",
+    "title": "[Cubic-S(XX)] Failure in circuit for fixed safety input (override) or in wiring. (code XX)",
+    "titleThai": "[Cubic-S(XX)] วงจรหรือสายสัญญาณของ Fixed Safety Input (Override) ขัดข้อง (รหัส XX)",
+    "description": "A fault has been detected in the fixed safety input circuit or its wiring.",
+    "descriptionThai": "ตรวจพบความผิดปกติในวงจรหรือสายสัญญาณของ Fixed Safety Input",
+    "causes": [
+      "Damaged wiring",
+      "Loose connector",
+      "Safety input circuit failure",
+      "Faulty Cubic-S safety module"
+    ],
+    "causesThai": [
+      "สายไฟชำรุด",
+      "ขั้วต่อหลวม",
+      "วงจร Safety Input ขัดข้อง",
+      "โมดูล Cubic-S ขัดข้อง"
+    ],
+    "inspection": [
+      "Inspect all safety input wiring.",
+      "Check all connectors.",
+      "Verify Cubic-S module operation.",
+      "Repair or replace damaged components."
+    ],
+    "inspectionThai": [
+      "ตรวจสอบสายสัญญาณทั้งหมด",
+      "ตรวจสอบขั้วต่อ",
+      "ตรวจสอบการทำงานของ Cubic-S",
+      "ซ่อมหรือเปลี่ยนอุปกรณ์ที่เสียหาย"
+    ],
+    "safety": [
+      "Never bypass safety circuits.",
+      "Verify emergency stop operation after repair."
+    ],
+    "safetyThai": [
+      "ห้ามบายพาสวงจรความปลอดภัย",
+      "ตรวจสอบการทำงานของ Emergency Stop หลังซ่อม"
+    ]
+  },
+  {
+    "code": "W6001",
+    "title": "Replace the robot main cable.",
+    "titleThai": "เปลี่ยนสายเคเบิลหลักของหุ่นยนต์",
+    "description": "The robot main cable has reached its replacement condition or requires maintenance.",
+    "descriptionThai": "สายเคเบิลหลักของหุ่นยนต์ถึงกำหนดเปลี่ยนหรือจำเป็นต้องบำรุงรักษา",
+    "causes": [
+      "Cable wear",
+      "Cable damage",
+      "Exceeded maintenance interval",
+      "Poor electrical connection"
+    ],
+    "causesThai": [
+      "สายเคเบิลสึกหรอ",
+      "สายเคเบิลเสียหาย",
+      "ถึงรอบการบำรุงรักษา",
+      "การเชื่อมต่อไฟฟ้าไม่สมบูรณ์"
+    ],
+    "inspection": [
+      "Inspect the robot main cable.",
+      "Check for cuts or cracks.",
+      "Replace the cable.",
+      "Verify robot operation."
+    ],
+    "inspectionThai": [
+      "ตรวจสอบสายเคเบิลหลัก",
+      "ตรวจสอบรอยแตกหรือการฉีกขาด",
+      "เปลี่ยนสายเคเบิล",
+      "ทดสอบการทำงานของหุ่นยนต์"
+    ],
+    "safety": [
+      "Power OFF the robot before replacing cables.",
+      "Use approved replacement parts only."
+    ],
+    "safetyThai": [
+      "ปิดไฟก่อนเปลี่ยนสายเคเบิล",
+      "ใช้สายอะไหล่ที่ได้รับการรับรองเท่านั้น"
+    ]
+  },
+  {
+    "code": "D2058",
+    "title": "[Main CPU Board] DC is abnormal. (XX mV)",
+    "titleThai": "[Main CPU Board] แรงดันไฟ DC ผิดปกติ (XX mV)",
+    "description": "The controller detected an abnormal DC voltage on the Main CPU board.",
+    "descriptionThai": "คอนโทรลเลอร์ตรวจพบแรงดันไฟ DC ผิดปกติบนแผง Main CPU",
+    "causes": [
+      "Power supply failure",
+      "Main CPU board fault",
+      "Loose power connection",
+      "Abnormal DC voltage"
+    ],
+    "causesThai": [
+      "แหล่งจ่ายไฟขัดข้อง",
+      "แผง Main CPU ชำรุด",
+      "สายไฟหลวม",
+      "แรงดันไฟ DC ผิดปกติ"
+    ],
+    "inspection": [
+      "Measure the DC voltage.",
+      "Inspect the power supply.",
+      "Check all power connectors.",
+      "Replace the Main CPU board if necessary."
+    ],
+    "inspectionThai": [
+      "วัดแรงดันไฟ DC",
+      "ตรวจสอบแหล่งจ่ายไฟ",
+      "ตรวจสอบขั้วต่อไฟทั้งหมด",
+      "เปลี่ยนแผง Main CPU หากจำเป็น"
+    ],
+    "safety": [
+      "Disconnect power before opening the controller.",
+      "Use appropriate ESD protection when handling electronic boards."
+    ],
+    "safetyThai": [
+      "ตัดไฟก่อนเปิดตู้คอนโทรล",
+      "ใช้อุปกรณ์ป้องกันไฟฟ้าสถิต (ESD) เมื่อตรวจสอบแผงวงจร"
+    ]
+  }
+]
